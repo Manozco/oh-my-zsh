@@ -27,6 +27,13 @@ sed -i -e "/^ZSH=/ c\\
 ZSH=$ZSH
 " ~/.zshrc
 
+if [-f ~/.bash_aliases] || [-h ~/.bash_aliases ]
+then
+    echo "Copying .bash_aliases to the end of .zshrc"
+    echo "############.bash_aliases###############"
+    cat ~/.bash_aliases >> ~/.zshrc
+fi
+
 echo "\033[0;34mCopying your current PATH and adding it to the end of ~/.zshrc for you.\033[0m"
 sed -i -e "/export PATH=/ c\\
 export PATH=\"$PATH\"
