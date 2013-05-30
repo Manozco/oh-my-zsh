@@ -55,7 +55,6 @@ source $ZSH/oh-my-zsh.sh
 #############Env variables for plugins
 export apt_pref="apt-get" ##Use of apt-get instead of aptitude for the plugin "debian"
 # Customize to your needs...
-export DISABLE_CORRECTION="true"
 alias grep="ack" ##In case I forgot to use ack :D
 alias bingrep="/bin/grep" #In case I really want to use grep
 
