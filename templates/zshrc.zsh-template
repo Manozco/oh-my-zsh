@@ -51,6 +51,9 @@ ZSH_THEME="robbyrussell"
 plugins=(git gitfast debian git-extras last-working-dir sublime)
 
 source $ZSH/oh-my-zsh.sh
+#############Env variables for plugins
+export apt_pref="apt-get" ##Use of apt-get instead of aptitude for the plugin "debian"
+# Customize to your needs...
 
 # User configuration
 
